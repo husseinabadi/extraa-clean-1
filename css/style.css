@@ -1,0 +1,1282 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #000000;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    font-weight: 100;
+}
+
+a {
+    color: #454545;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #333333;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #187bcd;
+    color: #000000;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    border-radius: 5px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    color: #ffffff;
+    background: #00bfff;
+}
+
+.back-to-top i {
+    padding-top: 10px;
+}
+
+
+/*******************************/
+/********** Header CSS *********/
+/*******************************/
+.header {
+    position: relative;
+    width: 100%;
+    padding: 15px 0 0 0;
+    background: #00bfff;
+}
+
+.header.home {
+    margin-bottom: 45px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeImage 40s infinite ease-in-out;
+
+}
+
+@keyframes changeImage{
+    0%
+    {
+        background-image: url(../img/10.jpg);
+        
+    }
+    25%
+    {
+        background-image: url(../img/11.jpg);
+        
+    }
+    50%
+    {
+        background-image: url(../img/10.jpg);
+        
+    }
+    75%
+    {
+        background-image: url(../img/11.jpg);
+        
+    }
+    100%
+    {
+        background-image: url(../img/10.jpg);
+        
+    }
+}
+
+@media (min-width: 992px) {
+    .header .row {
+        padding: 0 60px;
+    }
+}
+
+.header .header-top {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.header .brand {
+    position: relative;
+}
+
+.header .brand a {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.header .brand img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 200px;
+}
+
+.header .topbar {
+    position: relative;
+    text-align: right;
+}
+
+.header .topbar .topbar-col {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.header .topbar-col a {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.header .topbar-col a i {
+    margin-right: 10px;
+    color: #187bcd;
+}
+
+@media (min-width: 992px) {
+    .header .navbar {
+        background: transparent !important;
+        margin-left: 300px;
+    }
+    
+    .header .navbar-brand {
+        display: none;
+    }
+    .nav2-link{
+        display: none;
+    }
+    .header .navbar-light a.nav-link,
+    .header .navbar-light .show > .nav-link {
+        position: relative;
+        padding: 8px 10px;
+        color: #ffffff;
+        font-size: 16px;
+        z-index: 1;
+    }
+    
+    .header .navbar-light a.nav-link:hover,
+    .header .navbar-light a.nav-link.active {
+        color: #187bcd;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .header .brand img{
+        width: 70%; 
+    }
+    .header .brand {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar .topbar-col {
+        margin: 0;
+    }
+    
+    .header .navbar {
+        background: #ffffff !important;
+        border: none;
+        z-index: 1;
+    }
+    
+    .header a.nav2-link {
+        padding: 5px 0;
+    }
+    .nav-link{
+        display: none;
+    }
+    
+}
+
+
+
+@media (max-width: 992px) {
+    .header .navbar {
+        border-radius: 5px;
+    }  
+}
+
+.header .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.header .hero h2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 1000;
+    color: #ffffff;
+}
+
+.header .hero p {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+@media (max-width: 992px) {
+    .header .hero h2 {
+        font-size: 35px;
+
+    }
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 1s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(2){
+    animation-delay: 0s;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 3.5s;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+}
+
+.bubbles img:nth-child(6){
+    animation-delay: 5s;
+    width: 20px;
+}
+
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35;
+}
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 90px 0;
+    text-align: center;
+    background: #00bfff;
+}
+
+.page-header h2 {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #00539C;
+}
+
+.page-header a:hover {
+    color: #000000;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
+    text-align: center;
+    color: #666666;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: linear-gradient(to left, #FFD662, #00539C, #FFD662);
+    border-radius: 100%;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 9px;
+    left: calc(50% - 10px);
+    bottom: -3px;
+    background: #87CEEB;
+    border-radius: 5px;
+}
+
+.section-header p {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.section-header h2 {
+    color: #00539C;
+    font-size: 50px;
+    font-weight: 100;
+}
+@media (max-width: 992px){
+      .section-header h2 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+}
+
+.section-header.left {
+    text-align: left;
+}
+
+.section-header.left::before {
+    width: 60px;
+    left: 0;
+    background: linear-gradient(to left, #FFD662, #00539C, #00539C);
+    border-radius: 0 100% 100% 0;
+}
+
+.section-header.left::after {
+    left: 0;
+    border-radius: 5px;
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about .about-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about .about-text p {
+    border: 4px solid #00bfff;
+    border-radius: 20px;
+    box-shadow: 10px 20px 30px #00bfff;
+    font-size: 23px;
+    margin-top: 30px;
+    font-weight: 500;
+    padding-left: 4px;
+    background: #00bfff;
+}
+
+@media (max-width: 992px) {
+    .about .about-img img {
+        margin-bottom: 30px;
+    }
+}
+.about2 {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about2 .about-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about2 .about-text p {
+    border: 4px solid #00bfff;
+    border-radius: 20px;
+    box-shadow: 10px 20px 30px #00bfff;
+    font-size: 23px;
+    margin-top: 30px;
+    font-weight: 500;
+    padding-left: 4px;
+    background: #00bfff;
+}
+
+@media (max-width: 992px) {
+    .about2 .about-img img {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 500px){
+    .about{display: none;}
+}
+@media (min-width: 500px){
+    .about2{display: none;}
+}
+
+
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.service .service-item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.service .service-item h3 {
+    margin: 0;
+    padding: 25px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #00bfff;
+}
+
+.service .service-item p {
+    margin: 0;
+    padding: 0 25px 25px 25px;
+    font-size: 16px;
+}
+
+.service .service-item a.btn {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    background: #187bcd;
+    transition: .3s;
+}
+
+.service .service-item:hover a.btn {
+    color: #ffffff;
+    background: #00bfff;
+}
+
+.service .service-item a.btn:hover {
+    color: #000000;
+    background: #00bfff;
+}
+
+.servicem .service2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.servicem .service2 img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.servicem .service2 h3 {
+    margin: 0;
+    padding: 25px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #00bfff;
+}
+
+.servicem .service2 p {
+    margin: 0;
+    padding: 0 25px 25px 25px;
+    font-size: 16px;
+}
+
+.servicem .service2 a.btn {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    background: #187bcd;
+    transition: .3s;
+}
+
+.servicem .service2:hover a.btn {
+    color: #ffffff;
+    background: #00bfff;
+}
+
+.servicem .service2 a.btn:hover {
+    color: #000000;
+    background: #00bfff;
+}
+
+/*******************************/
+/********* Feature CSS *********/
+/*******************************/
+.feature {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.feature .section-header {
+    margin-bottom: 30px;
+}
+
+.feature .feature-item {
+    margin-bottom: 30px;
+}
+
+.feature .feature-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.feature .feature-item h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #00539C;
+}
+
+.feature .feature-item p {
+    margin: 0;
+    font-size: 16px;
+    
+}
+
+.feature p{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.feature2 {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.feature2 .section-header {
+    margin-bottom: 30px;
+}
+
+.feature2 .feature-item {
+    margin-bottom: 30px;
+}
+
+.feature2 .feature-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.feature2 .feature-item h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #00539C;
+}
+
+.feature2 .feature-item p {
+    margin: 0;
+    font-size: 16px;
+    
+}
+
+.feature2 p{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+@media (max-width: 992px) {
+    .feature .feature-item h3 {
+        font-size: 16px;
+    }
+    .feature h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 992px) {
+    .feature2 .feature-item h3 {
+        font-size: 16px;
+    }
+    .feature2 h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .feature .i1{
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px){
+    .feature{display: none;} 
+}
+@media (min-width: 500px){
+    .feature2{display: none;} 
+}
+
+
+
+/*******************************/
+/******* Call to Action ********/
+/*******************************/
+.call-to-action {
+    position: relative;
+    margin: 45px 0;
+    padding: 60px 0;
+    background: #00bfff;
+}
+
+.call-to-action h2 {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.call-to-action a {
+    float: right;
+    height: 60px;
+    padding: 16px 35px 14px 35px;
+    font-size: 18px;
+    font-weight:400;
+    text-transform: uppercase;
+    color: #000000;
+    background: #187bcd;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    color: #187bcd;
+    background: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .call-to-action a {
+        float: left;
+        margin-top: 30px;
+    }
+    .call-to-action h2 {
+       font-size: 23px;
+    }
+}
+
+
+
+
+
+
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.con {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.con h1 {
+    color: #333;
+    text-align: center;
+}
+
+.con form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.con label {
+    display: block;
+    margin-top: 10px;
+}
+
+.con input[type="text"],
+.con input[type="tel"],
+.con input[type="email"],
+.con select,
+.con textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.con input[type="submit"] {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.con input[type="submit"]:hover {
+    background-color: #187bcd;
+}
+
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background: #00bfff;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.footer .footer-contact {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.footer .footer-contact h2{
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #187bcd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact a {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 100px;
+}
+
+.footer .footer-contact a i {
+    color: #fff;
+    width: 25px;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer .footer-contact a:hover{
+    color: #187bcd;
+} 
+
+.footer2 {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background: #00bfff;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.footer2 .footer-contact {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.footer2 .footer-contact h2{
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #187bcd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer2 .footer-contact a {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 100px;
+}
+
+.footer2 .footer-contact a i {
+    color: #fff;
+    width: 25px;
+}
+
+.footer2 a{
+    color: #fff;
+}
+
+.footer2 .footer-contact a:hover{
+    color: #187bcd;
+}
+@media (max-width: 500px){
+    .footer{
+        display: none;
+    }
+}
+@media (min-width: 500px){
+    .footer2{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .footer2 .footer-contact a {
+        margin-right: 500px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 150px;
+        padding-left: 40px;
+    }
+}
+
+.LEISTUNGEN h1{
+    padding-left: 500px;
+    
+}
+
+
+/*******************************/
+/********* body **********/
+/*******************************/
+
+.body{
+    position: relative;
+    padding-top: 100px;
+    padding-left: 100px;
+    height: auto;
+    width: 45vmax;
+}
+
+.body h3{
+    padding-left: 400px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.body p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.img{
+    padding-left: 650px;
+    margin-top: -250px;
+}
+
+
+.col-12 h1{
+    font-weight: 600;
+    
+}
+
+.col-12 p{
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+
+.imgr{
+    width: 300px;
+    height: 70vh;
+}
+
+.about h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.kan{
+    position: relative;
+    width: 50%;
+    margin-left: 50px; 
+    margin-top: 50px;
+}
+
+.kanabey2{
+    position: relative;
+    width: 50%;
+    margin-left: 605px; 
+    margin-top: -444px;
+}
+
+.kanabey{
+    position: relative;
+    width: 50%;
+    margin-left: 605px; 
+    margin-top: -417px;
+}
+
+@media (max-width:500px){
+    .kanabey2{
+        position: relative;
+        width: 68%;
+        margin-left: 50px; 
+        margin-top: 0px;
+    }
+    
+    .kanabey{
+        position: relative;
+        width: 68%;
+        margin-left: 50px; 
+        margin-top: 0px;
+    }
+
+}
+
+.main h1{
+    margin-left: 150px;
+    width: 900px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.main h2{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 800px;
+    margin-top: -370px;
+}
+
+.main h3, h4, h5, h6{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 800px;
+    
+}
+
+@media (max-width: 992px){
+    .kan{
+        width: 250px;
+    }
+    .main h1{
+        margin-left: 10px;
+        width: 300px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .main h2{
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 300px;
+    
+    }
+    
+    .main h3, h4, h5, h6{
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 15px;
+        width: 300px;        
+    }
+}
+
+.main2 h1{
+    margin-left: 50px;
+    width: 900px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.main2 p{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 1200px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.es{
+    position: relative;
+    width: 30%;
+    margin-left: 600px; 
+    margin-top: 50px;
+}
+.main2 h2{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 50px;
+    margin-top: -600px;
+}
+.main2 h3, .main2 h4, .main2 h5, .main2 h6{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 50px;
+}
+.ma h1, .ma h2{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 50px;
+}
+
+@media (max-width: 992px){
+    .main2 h1{
+        margin-left: 10px;
+        width: 300px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .main2 p{
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 300px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .es{
+        position: relative;
+        width: 50%;
+        margin-left: 80px; 
+        margin-top: 50px;
+    }
+    .main2 h2{
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .main2 h3, .main2 h4, .main2 h5, .main2 h6{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 20px;
+    }
+    .ma h1, .ma h2{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 20px;
+    }
+    .col-12 h2{
+        font-size: 25px;
+        font-weight: 500;
+        width: 300px;
+
+    }
+}
+
+.main3 h2{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 760px;
+    margin-top: -440px;
+    width: 550px;
+}
+
+.kan1{
+    position: relative;
+    width: 50%;
+    margin-left: 20px; 
+    margin-top: 15px;
+}
+@media (max-width: 992px){
+    .main3 h2{
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 300px;
+    }
+    
+    .kan1{
+        position: relative;
+        width: 80%;
+        margin-left: 20px; 
+        margin-top: 15px;
+    }
+
+    
+}
+
+@media (max-width: 992px){
+    .col-12 h1{
+        font-size: 25px;
+    }
+    .col-12 p{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .service{
+        display: none;
+    }
+}
+@media (min-width: 500px){
+    .servicem{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .about2 h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+
+
+  
