@@ -1051,7 +1051,7 @@ a:focus {
         margin-left: 20px; 
         margin-top: 0px;
     }
-     .kan10{
+    .kan10{
         position: relative;
         width: 80%;
         margin-left: 20px; 
@@ -1071,8 +1071,9 @@ a:focus {
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    margin-left: 800px;
+    margin-left: 650px;
     margin-top: -370px;
+    width: 600px;
 }
 
 .main h3, h4, h5, h6{
@@ -1080,40 +1081,10 @@ a:focus {
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    margin-left: 800px;
+    margin-left: 650px;
     
 }
 
-@media (max-width: 992px){
-    .kan{
-        width: 250px;
-    }
-    .main h1{
-        margin-left: 10px;
-        width: 300px;
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .main h2{
-        font-size: 15px;
-        font-weight: 500;
-        position: relative;
-        margin-left: 15px;
-        margin-top: 10px;
-        width: 300px;
-    
-    }
-    
-    .main h3, h4, h5, h6{
-        margin-top: 20px;
-        font-size: 15px;
-        font-weight: 500;
-        position: relative;
-        margin-left: 15px;
-        width: 300px;        
-    }
-}
 .after h1{
     font-size: 50px;
     font-weight: 600;
@@ -1137,7 +1108,9 @@ a:focus {
 
 @media (max-width: 992px){
     .kan{
-        width: 250px;
+        width: 350px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
     .main h1{
         margin-left: 10px;
@@ -1189,6 +1162,7 @@ a:focus {
     }
 
 }
+
 .main2 h1{
     margin-left: 50px;
     width: 900px;
@@ -1196,11 +1170,11 @@ a:focus {
     font-weight: 600;
 }
 .main2 p{
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: 20px;
     width: 1200px;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .es{
@@ -1214,7 +1188,7 @@ a:focus {
     font-weight: 500;
     position: relative;
     margin-left: 50px;
-    margin-top: -600px;
+    margin-top: -500px;
 }
 .main2 h3, .main2 h4, .main2 h5, .main2 h6{
     margin-top: 20px;
@@ -1285,8 +1259,8 @@ a:focus {
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    margin-left: 760px;
-    margin-top: -440px;
+    margin-left: 660px;
+    margin-top: -380px;
     width: 550px;
 }
 
