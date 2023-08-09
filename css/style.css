@@ -1015,36 +1015,47 @@ a:focus {
     position: relative;
     width: 50%;
     margin-left: 50px; 
-    margin-top: 50px;
+    margin-top: 100px;
+}
+
+.kan10{
+    position: relative;
+    width: 50%;
+    margin-left: 20px; 
+    margin-top: 15px;
 }
 
 .kanabey2{
-    position: relative;
     width: 50%;
     margin-left: 605px; 
     margin-top: -444px;
 }
 
 .kanabey{
-    position: relative;
     width: 50%;
     margin-left: 605px; 
-    margin-top: -417px;
+    margin-top: -653px;
 }
 
 @media (max-width:500px){
     .kanabey2{
         position: relative;
-        width: 68%;
-        margin-left: 50px; 
+        width: 80%;
+        margin-left: 20px; 
         margin-top: 0px;
     }
     
     .kanabey{
         position: relative;
-        width: 68%;
-        margin-left: 50px; 
+        width: 80%;
+        margin-left: 20px; 
         margin-top: 0px;
+    }
+     .kan10{
+        position: relative;
+        width: 80%;
+        margin-left: 20px; 
+        margin-top: 15px;
     }
 
 }
@@ -1103,7 +1114,81 @@ a:focus {
         width: 300px;        
     }
 }
+.after h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-top: 100px;
+    
+}
 
+.after h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 800px;
+    margin-top: -70px;
+}
+
+@media(min-width: 992px){
+    .before{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .kan{
+        width: 250px;
+    }
+    .main h1{
+        margin-left: 10px;
+        width: 300px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .main h2{
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 300px;
+    
+    }
+    
+    .main h3, h4, h5, h6{
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 15px;
+        width: 300px;        
+    }
+    
+    .after h1{
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 30px;
+        margin-top: 70px;
+        
+    }
+    
+    .after h2{
+        display: none; 
+    }
+    .before h2{
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+    .before h1{
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+}
 .main2 h1{
     margin-left: 50px;
     width: 900px;
