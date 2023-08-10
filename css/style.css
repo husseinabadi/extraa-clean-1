@@ -748,7 +748,7 @@ a:focus {
 
 .call-to-action a {
     float: right;
-    height: 60px;
+    height: 80px;
     padding: 16px 35px 14px 35px;
     font-size: 18px;
     font-weight:400;
@@ -767,6 +767,7 @@ a:focus {
     .call-to-action a {
         float: left;
         margin-top: 30px;
+        height: 60px;
     }
     .call-to-action h2 {
        font-size: 23px;
