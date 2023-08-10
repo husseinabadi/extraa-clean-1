@@ -1336,6 +1336,13 @@ a:focus {
 .row .input-group{
     flex-basis: 48%;
 }
+.lin {
+    color: blue;
+}
+
+.lin:hover{
+    color: #000;
+}
 
 
   
