@@ -1345,5 +1345,19 @@ a:focus {
     color: #000;
 }
 
+.row h5{
+    width: 100%;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+@media (max-width: 992px){
+    .row h5{
+        font-size: 20px;
+        
+    }
+}
+
 
   
